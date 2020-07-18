@@ -21,7 +21,12 @@ body {
       height: auto;
     }
 
-    #home,
+    #header {
+      max-width: 100%;
+      height: 600px;
+    }
+
+
     #about,
     #products,
     #shop {
@@ -104,16 +109,19 @@ body {
 
     /*****************************VIDEO STYLING********************************/
 
-    #video {
+    #home > .video-container {
       position: fixed;
-      bottom: 0;
-      right: 0;
-      min-width: 100%;
-      min-height: 100%;
+      top: 0;
+      left: 0;
       z-index: -2;
     }
 
-    .
+    #home > .video-container > video {
+      position: fixed;
+      top: -450px;
+      left: -450px;
+    }
+
 
 
     /*****************************HOME********************************/
@@ -129,7 +137,8 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 6rem 0 3rem 0;
+      justify-content: center;
+      padding-top: 10rem;
     }
 
     #header-img {
@@ -185,106 +194,48 @@ body {
       background-color: white;
     }
 
+    /************************SHOP***********************/
+
+    #shop {
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+    }
+
+    .shop-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+    }
+
 
 /******************************DESKTOP STYLES***********************/
 
 @media only screen and (min-width: 768px) {
 
-    .full-width {
+  .full-width {
       width: 1200px;
-      height: 800px;
+      height: auto;
     }
 
-    #home,
-    #about,
-    #products,
-    #shop {
-      width: 100%;
-    }
-
-    .about-content,
-    .products-content,
-    .shop-content {
-      padding: 4rem;
-    }
-
-    .about-content p,
-    .products-content p,
-    .shop-content p {
-      padding-top: 2rem;
-    }
-    /*****************************NAV BAR STYLING********************************/
-    #nav-bar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: fixed;
-      height: 4rem;
-      width: 100%;
-      background: rgba(86, 196, 116, 0.7);
-      top: 0;
-      right: 0;
-    }
-
-    #nav-bar {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around;
-      width: 100%;
-      list-style: none;
-    }
-
-    #nav-bar > a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    #nav-bar > a {
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 1.2rem;
-      text-decoration: none;
-      text-transform: uppercase;
-      padding: 12px;
-      border-radius: 5px;
-    }
-
-    #nav-bar > a:hover {
-      color: var(--dark-green);
-    }
-
-    #nav-bar > a:active {
-      background-color: white;
-      color: var(--mustard);
-    }
-
-    #nav-img {
-      position: fixed;
-      height: 2.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: none;
-    }
-
-    a #nav-img {
-      padding: none;
-    }
+  #header {
+    max-width: inherit;
+    height: 800px;
+  }
 
     /*****************************VIDEO STYLING********************************/
 
-    /*#video{
-      position: fixed;
-      right: 0;
-      bottom: 0;
-      min-width: 100%;
-      min-height: 100%;
-    }*/
+    #home > .video-container {
+      width: inherit;
+    }
 
+    #home > .video-container > video {
+      max-width: inherit;
+      position: fixed;
+      top: -350px;
+    }
 
     /*****************************HOME********************************/
 
@@ -337,7 +288,6 @@ body {
     }
 
     .about-content {
-      padding: 4rem;
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
