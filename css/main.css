@@ -16,11 +16,6 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-    .full-screen {
-      width: 100%;
-      height: auto;
-    }
-
     .full-width {
       width: 768px;
       height: auto;
@@ -30,7 +25,7 @@ body {
     #about,
     #products,
     #shop {
-      width: 100%;
+      max-width: 100%;
       height: auto;
     }
 
@@ -58,18 +53,11 @@ body {
       right: 0;
     }
 
-    /*#nav-bar > ul > li {
-      display: inline-block;
-      list-style: none;
-      padding: 0 30px;
-      text-align: right;
-    }*/
-
     #nav-bar {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-around;
-      width: 100%;
+      max-width: 100%;
       list-style: none;
     }
 
@@ -122,27 +110,26 @@ body {
       right: 0;
       min-width: 100%;
       min-height: 100%;
-      z-index: -2; 
+      z-index: -2;
     }
+
+    .
 
 
     /*****************************HOME********************************/
 
     /*styling header image*/
+
     .responsive {
-      max-width: 100%;
       height: auto;
     }
 
-    #header > #home {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      width: 100%;
-    }
-
     .home-text {
-      padding: 3rem;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 6rem 0 3rem 0;
     }
 
     #header-img {
@@ -153,8 +140,6 @@ body {
 
     }
 
-    .home-text {
-    }
 
     .home-text #title {
       font-size: 2rem;
@@ -162,7 +147,7 @@ body {
     }
 
     .home-text #tagline {
-      font-size: 2rem;
+      font-size: 1rem;
       text-transform: uppercase;
       word-spacing: 0.7rem;
     }
@@ -241,13 +226,6 @@ body {
       right: 0;
     }
 
-    /*#nav-bar > ul > li {
-      display: inline-block;
-      list-style: none;
-      padding: 0 30px;
-      text-align: right;
-    }*/
-
     #nav-bar {
       display: flex;
       flex-flow: row wrap;
@@ -299,13 +277,13 @@ body {
 
     /*****************************VIDEO STYLING********************************/
 
-    #video{
+    /*#video{
       position: fixed;
       right: 0;
       bottom: 0;
       min-width: 100%;
       min-height: 100%;
-    }
+    }*/
 
 
     /*****************************HOME********************************/
@@ -316,11 +294,12 @@ body {
       height: auto;
     }
 
-    #header > #home {
+    .home-text {
       display: flex;
-      justify-content: flex-start;
+      flex-direction: column;
       align-items: center;
-      width: 100%
+      max-width: 100%;
+      padding: 0;
     }
 
     #header-img {
@@ -381,20 +360,19 @@ body {
       background-color: white;
     }
 
-}
+    /************************SHOP***********************/
 
-/************************SHOP***********************/
+    #shop {
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+    }
 
-#shop {
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: center;
-}
-
-.shop-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
+    .shop-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+    }
 }
