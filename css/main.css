@@ -210,6 +210,14 @@ body {
       align-content: center;
     }
 
+    input {
+      margin-top: 2rem;
+    }
+
+    #shop h3 {
+      padding-top: 0.7rem;
+    }
+
 
 /******************************DESKTOP STYLES***********************/
 
@@ -221,14 +229,21 @@ body {
     }
 
   #header {
-    max-width: inherit;
+    width: 100%;
     height: 800px;
+  }
+
+  #about,
+  #products,
+  #shop {
+    width: 100%;
+    height: auto;
   }
 
     /*****************************VIDEO STYLING********************************/
 
     #home > .video-container {
-      width: inherit;
+    width: 100%;
     }
 
     #home > .video-container > video {
@@ -251,6 +266,8 @@ body {
       align-items: center;
       max-width: 100%;
       padding: 0;
+      margin-top: 8rem;
+      margin-left: 4rem;
     }
 
     #header-img {
@@ -260,11 +277,6 @@ body {
       margin-top: 6rem;
       max-width: 250px;
 
-    }
-
-    .home-text {
-      margin-top: 8rem;
-      margin-left: 4rem;
     }
 
     .home-text #title {
@@ -325,4 +337,6 @@ body {
       align-items: center;
       align-content: center;
     }
+
+
 }
